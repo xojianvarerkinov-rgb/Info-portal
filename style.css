@@ -1,0 +1,116 @@
+/* AutoStar - Qora & Sariq dizayn */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #000000;
+  color: #FFD700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  background: #0b0b0b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 2px solid #222;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: #FFD700;
+}
+
+nav a {
+  color: #FFD700;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 600;
+}
+
+nav a:hover, nav a.active {
+  text-decoration: underline;
+}
+
+.hero {
+  text-align: center;
+  padding: 70px 20px;
+  background: linear-gradient(90deg, rgba(20,20,20,1) 0%, rgba(34,34,34,1) 100%);
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #FFD700;
+}
+
+.hero p { color: #e6c200; font-size: 18px; }
+
+a.button {
+  display: inline-block;
+  background: #FFD700;
+  color: #000;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+section { padding: 30px; }
+
+.cars .car-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.car-list li {
+  background: #111;
+  border: 1px solid #222;
+  padding: 12px;
+  border-radius: 8px;
+  width: 260px;
+  text-align: left;
+}
+
+.car-list img { width: 100%; border-radius: 6px; }
+
+.info h3 { margin: 8px 0 4px 0; color: #FFD700; }
+.price { font-weight: 800; color: #ffea70; }
+
+.photos { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.photos img { width: 220px; border-radius: 8px; }
+
+form { display:flex; flex-direction: column; align-items: center; gap:8px; }
+input, textarea, select {
+  width: 80%;
+  max-width: 520px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #0a0a0a;
+  color: #FFD700;
+}
+
+button {
+  background: #FFD700;
+  color: #000;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+footer {
+  background: #0b0b0b;
+  padding: 16px;
+  text-align: center;
+  border-top: 1px solid #222;
+  margin-top: 30px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aloqa - AutoStar</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function handleForm(e){
+      e.preventDefault();
+      alert('Xabaringiz qabul qilindi. Tez orada bog'lanamiz!');
+      document.getElementById('contact-form').reset();
+    }
+  </script>
+</head>
+<body>
+<header>
+  <div class="logo">🚗 AutoStar</div>
+  <nav>
+    <a href="index.html">Bosh sahifa</a>
+    <a href="cars.html">Avtomobillar</a>
+    <a href="services.html">Xizmatlar</a>
+    <a href="gallery.html">Galereya</a>
+    <a href="contact.html" class="active">Aloqa</a>
+  </nav>
+</header>
+
+<section class="contact">
+  <h2>Biz bilan bog‘laning</h2>
+  <form id="contact-form" onsubmit="handleForm(event)">
+    <label>Ismingiz:</label>
+    <input type="text" name="name" placeholder="Ismingizni kiriting" required>
+
+    <label>Email manzilingiz:</label>
+    <input type="email" name="email" placeholder="Email kiriting" required>
+
+    <label>Xizmat turi:</label>
+    <select name="service">
+      <option>Savdo</option>
+      <option>Texnik xizmat</option>
+      <option>Kredit/Leasing</option>
+      <option>Test Drive</option>
+    </select>
+
+    <label>Xabaringiz:</label>
+    <textarea name="message" placeholder="Xabaringizni yozing..." required></textarea>
+
+    <button type="submit">Yuborish</button>
+  </form>
+
+  <h3>Manzilimiz</h3>
+  <iframe src="https://maps.google.com/maps?q=Samarqand&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="250" style="border:0;"></iframe>
+</section>
+
+<footer>
+  <p>Biz bilan bog‘laning: +998 90 123 45 67 | autostar@gmail.com</p>
+</footer>
+</body>
+</html>
